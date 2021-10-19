@@ -38,7 +38,7 @@ public class ApiTestExamples {
     void statusCode() {
         get("https://reqres.in/api/users?page=2")
                 .then()
-                .extract().path("per_page");
+                .statusCode(200);
         
 
     }
